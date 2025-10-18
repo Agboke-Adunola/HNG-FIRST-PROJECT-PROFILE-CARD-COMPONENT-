@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <article>
+      <div class="card-container" id="show-details">
+        <div class="profile-card" id="card1" data-testid="test-profile-card">
+          <div class="flip-card-inner">
+            <!-- FRONT SIDE -->
+            <div class="card-front">
+              <div class="profile-image">
+                <figure>
+                  <img src="assets/profile pics.jpg" alt="Profile Avatar" />
+                </figure>
+              </div>
+
+              <div class="profile-info">
+                <h2 class="name">Agboke Adunola (AdunCodes)</h2>
+                <h3>Frontend Developer</h3>
+                <p id="current-time"></p>
+                <p>
+                  Turning ideas into interfaces | Passionate about building
+                  responsive, user-centered experiences using
+                  <span class="profile-info-highlight">
+                    <strong>HTML</strong>, <strong>CSS</strong>,
+                    <strong>JavaScript</strong>, and
+                    <strong>React</strong> </span
+                  >.
+                </p>
+
+                <div class="action-btns">
+                  <button class="btn-connect">Connect</button>
+                  <button class="btn-message">Message</button>
+                </div>
+
+                <div class="social-icons">
+                  <a
+                    href="https://linkedin.com/in/agboke-folashade-718416125"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Agboke-Adunola"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com/Agboke-folashade"
+                    target="_blank"
+                    aria-label="Instagram"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- BACK SIDE -->
+            <div class="card-back">
+              <div class="wrapper">
+                <div class="hobbies">
+                  <h3>Hobbies</h3>
+                  <ul>
+                    <li>Coding</li>
+                    <li>Travelling</li>
+                    <li>Cooking</li>
+                    <li>Connecting with people</li>
+                    <li>Open source contributions</li>
+                  </ul>
+                </div>
+
+                <div class="dislike">
+                  <h3>Dislikes</h3>
+                  <ul>
+                    <li>Travelling</li>
+                    <li>Cooking</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="contact-links">
+                <h3>Let's Connect</h3>
+                <p>
+                  Feel free to reach out for collaborations, projects, or
+                  networking opportunities.
+                </p>
+                <div class="social-icons">
+                  <a
+                    href="https://linkedin.com/in/agboke-folashade-718416125"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Agboke-Adunola"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:aduncodes@example.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
