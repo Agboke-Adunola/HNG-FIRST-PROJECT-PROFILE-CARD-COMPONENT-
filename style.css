@@ -153,17 +153,17 @@ body {
 }
 
 /* Hover floating effect */
-.profile-card:hover:not(.shrink) {
+/* .profile-card:hover:not(.shrink) {
   transform: translateY(-5px) scale(1.02);
-}
+} */
 
 /* Shrink when clicked */
-.profile-card.shrink {
+/* .profile-card.shrink {
   width: 400px;
   height: 250px;
   transform: scale(0.9);
   opacity: 0.9;
-}
+} */
 
 /* =====================
    DETAIL CARD
@@ -276,9 +276,14 @@ body {
     font-size: 1.1rem;
   }
 
-  .profile-image img {
+  .profile-image figure img {
     object-position: center;
-    height: 400px;
+    /* height: 400px; */
+  }
+
+  .wrapper{
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 
