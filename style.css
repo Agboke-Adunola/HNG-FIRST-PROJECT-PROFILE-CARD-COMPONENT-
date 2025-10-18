@@ -23,9 +23,6 @@ body {
   height: 100vh;
 }
 
-/* =====================
-   CARD CONTAINER
-===================== */
 .card-container {
   display: flex;
   flex-direction: column;
@@ -34,9 +31,6 @@ body {
   transition: all 0.5s ease;
 }
 
-/* =====================
-   PROFILE CARD
-===================== */
 .profile-card {
   display: flex;
   width: 760px;
@@ -165,9 +159,7 @@ body {
   opacity: 0.9;
 } */
 
-/* =====================
-   DETAIL CARD
-===================== */
+
 .detail-card {
   opacity: 0;
   pointer-events: none;
@@ -193,9 +185,6 @@ body {
   transform: scale(1);
 }
 
-/* =====================
-   DETAIL CARD CONTENT
-===================== */
 .detail-header {
   display: flex;
   gap: 1rem;
@@ -237,9 +226,7 @@ body {
   font-size: 0.8rem;
 }
 
-/* =====================
-   RESPONSIVE DESIGN
-===================== */
+/* Responsiveness */
 
 /* Tablet view (600px–1024px) */
 @media (max-width: 1024px) and (min-width: 600px) {
@@ -273,7 +260,7 @@ body {
 
   .social-icons a {
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .profile-image figure img {
@@ -282,18 +269,26 @@ body {
   }
 
   .wrapper{
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: stretch;
   }
-}
+}       
 
 /* Mobile view (≤599px) */
 @media (max-width: 599px) {
   .profile-card {
+    display: flex;
     flex-direction: column;
     width: 95%;
     height: auto;
   }
+
+  /* .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
 
   .profile-info {
     text-align: center;
@@ -376,7 +371,7 @@ body {
   overflow-y: auto;
 }
 
-.wrapper {
+.card-back .wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -403,7 +398,7 @@ body {
 .card-back .dislike h3 {
   color: var(--yellow);
   margin-bottom: 0.8rem;
-  font-size: 1rem;
+  font-size: .7rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -465,4 +460,34 @@ body {
 .card-back .social-icons a:hover {
   color: var(--yellow);
   transform: scale(1.2);
+}
+
+
+/* keyboard navigation for links */
+a:focus,
+a:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 4px;
+  border-radius: 4px;
+  transition: outline 0.2s ease;
+}
+
+/* keyboard navigation for buttons */
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 4px;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(255, 235, 59, 0.5);
+  transition: outline 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* keyboard navigation for social Icons */
+.social-icons a:focus,
+.social-icons a:focus-visible {
+  color: var(--yellow);
+  transform: scale(1.15);
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 235, 59, 0.6);
+  border-radius: 50%;
 }

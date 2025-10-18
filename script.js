@@ -7,7 +7,7 @@ function updateTime() {
   // getting the current time in milliseconds
   const milliseconds = now.getTime();
 
-  currentTimeElement.textContent = `Current Time: ${milliseconds}`;
+  currentTimeElement.textContent = `Current Time: ${milliseconds} ms`;
 }
 
 // to update every 1 second
