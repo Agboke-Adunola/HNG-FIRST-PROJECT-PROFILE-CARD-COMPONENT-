@@ -1,3 +1,21 @@
+
+const currentTimeElement = document.getElementById("current-time");
+
+function updateTime() {
+  const now = new Date();
+
+  // getting the current time in milliseconds
+  const milliseconds = now.getTime();
+
+  currentTimeElement.textContent = `Current Time: ${milliseconds}`;
+}
+
+// to update every 1 second
+setInterval(updateTime, 1000);
+
+updateTime();
+
+
 const profileCard = document.getElementById("profileCard");
 const detailCard = document.getElementById("detailCard");
 const showBtn = document.getElementById("showDetails");
@@ -13,3 +31,4 @@ detailCard.querySelector("img").addEventListener("click", () => {
   profileCard.classList.remove("shrink");
   detailCard.classList.remove("show");
 });
+

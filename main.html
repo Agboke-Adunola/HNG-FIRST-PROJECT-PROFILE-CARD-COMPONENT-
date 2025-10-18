@@ -13,55 +13,57 @@
 
   <body>
     <article>
-      <div class="card-container" id="show-details">
-        <div class="profile-card" id="card1" data-testid="test-profile-card">
+      <div class="card-container" id="show-details" data-testid="test-profile-card">
+        <div class="profile-card" >
           <div class="flip-card-inner">
             <!-- FRONT SIDE -->
             <div class="card-front">
-              <div class="profile-image">
+              <div class="profile-image" data-testid="test-user-avatar">
                 <figure>
                   <img src="assets/profile pics.jpg" alt="Profile Avatar" />
                 </figure>
               </div>
 
               <div class="profile-info">
-                <h2 class="name">Agboke Adunola (AdunCodes)</h2>
+                <h2 class="name" data-testid="test-user-name">Agboke Adunola (AdunCodes)</h2>
                 <h3>Frontend Developer</h3>
-                <p id="current-time"></p>
-                <p>
+                <p data-testid="test-user-bio">
                   Turning ideas into interfaces | Passionate about building
                   responsive, user-centered experiences using
                   <span class="profile-info-highlight">
                     <strong>HTML</strong>, <strong>CSS</strong>,
                     <strong>JavaScript</strong>, and
                     <strong>React</strong> </span
-                  >.
+                  >
                 </p>
+
+                <!-- Current Time Display -->
+                <p id="current-time">Loading current time...</p>
 
                 <div class="action-btns">
                   <button class="btn-connect">Connect</button>
                   <button class="btn-message">Message</button>
                 </div>
 
-                <div class="social-icons">
+                <div class="social-icons" data-testid="test-user-social-links">
                   <a
                     href="https://linkedin.com/in/agboke-folashade-718416125"
-                    target="_blank"
+                    target="_blank" rel="noopener" data-testid="test-user-social-linkedin"
                     aria-label="LinkedIn"
                   >
                     <i class="fab fa-linkedin"></i>
                   </a>
                   <a
                     href="https://github.com/Agboke-Adunola"
-                    target="_blank"
-                    aria-label="GitHub"
+                    target="_blank" data-testid="test-user-social-github"
+                    aria-label="GitHub" rel="noopener" 
                   >
                     <i class="fab fa-github"></i>
                   </a>
                   <a
                     href="https://instagram.com/Agboke-folashade"
-                    target="_blank"
-                    aria-label="Instagram"
+                    target="_blank" data-testid="test-user-social-instagram
+                    aria-label="Instagram" 
                   >
                     <i class="fab fa-instagram"></i>
                   </a>
@@ -70,9 +72,10 @@
             </div>
 
             <!-- BACK SIDE -->
-            <div class="card-back">
+            <div class="card-back"> 
+
               <div class="wrapper">
-                <div class="hobbies">
+                <div class="hobbies" data-testid="test-user-hobbies">
                   <h3>Hobbies</h3>
                   <ul>
                     <li>Coding</li>
@@ -83,16 +86,17 @@
                   </ul>
                 </div>
 
-                <div class="dislike">
+                <div class="dislike" data-testid="test-user-dislike">
                   <h3>Dislikes</h3>
                   <ul>
-                    <li>Travelling</li>
-                    <li>Cooking</li>
+                    <li>Procrastination</li>
+                    <li>Fixing Bugs</li>
+                    <li>Bad Connectivity</li>
                   </ul>
                 </div>
               </div>
 
-              <div class="contact-links">
+              <div class="contact-links" data-testid="test-user-contact-links">
                 <h3>Let's Connect</h3>
                 <p>
                   Feel free to reach out for collaborations, projects, or
@@ -101,20 +105,24 @@
                 <div class="social-icons">
                   <a
                     href="https://linkedin.com/in/agboke-folashade-718416125"
-                    target="_blank"
+                    target="_blank" data-testid="test-user-social-linkedin"
                     aria-label="LinkedIn"
                   >
                     <i class="fab fa-linkedin"></i>
                   </a>
                   <a
                     href="https://github.com/Agboke-Adunola"
-                    target="_blank"
+                    target="_blank" data-testid="test-user-social-github"
                     aria-label="GitHub"
                   >
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="mailto:aduncodes@example.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
+                                   <a
+                    href="https://instagram.com/Agboke-folashade"
+                    target="_blank" data-testid="test-user-social-instagram
+                    aria-label="Instagram" 
+                  >
+                    <i class="fab fa-instagram"></i>
                   </a>
                 </div>
               </div>
