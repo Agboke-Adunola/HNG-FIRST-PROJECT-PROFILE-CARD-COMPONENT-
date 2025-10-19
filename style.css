@@ -15,7 +15,8 @@
   box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
   font-family: var(--font-family);
   width: 100%;
   background-color: var(--whitish);
@@ -173,6 +174,7 @@ html,body {
   border-radius: 1rem;
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: var(--whitish);
+
   transition: all 0.6s ease;
 }
 
@@ -288,12 +290,16 @@ html,body {
 .card-back .hobbies,
 .card-back .dislike {
   width: 100%;
-  background: rgba(255, 255, 255, 0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
   border-radius: 0.8rem;
   text-align: left;
   padding: 1rem;
   height: 100%;
   transition: background 0.3s ease;
+}
+.hobbies,
+.dislike {
+  background-color: transparent !important;
 }
 
 .card-back .hobbies:hover .card-back .dislike:hover {
@@ -410,8 +416,8 @@ button:focus-visible {
     overflow-y: auto;
   }
   .profile-card::-webkit-scrollbar {
-  display: none; 
-}
+    display: none;
+  }
   .card-front {
     flex-direction: column;
   }
@@ -424,14 +430,14 @@ button:focus-visible {
   }
   .profile-image {
     max-height: 35%;
-    min-height:30%;
+    min-height: 30%;
   }
   .profile-image figure {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    
+
     object-fit: contain;
   }
 
