@@ -1,34 +1,26 @@
-
 const currentTimeElement = document.getElementById("current-time");
 
 function updateTime() {
   const now = new Date();
-
-  // getting the current time in milliseconds
   const milliseconds = now.getTime();
-
   currentTimeElement.textContent = `Current Time: ${milliseconds} ms`;
 }
 
-// to update every 1 second
 setInterval(updateTime, 1000);
-
 updateTime();
 
+// Flip functionality
+const flipCardInner = document.querySelector(".flip-card-inner");
+const profileImage = document.querySelector(".profile-image img");
 
-const profileCard = document.getElementById("profileCard");
-const detailCard = document.getElementById("detailCard");
-const showBtn = document.getElementById("showDetails");
-
-// When clicking "Show Details" → shrink profile card & reveal details
-showBtn.addEventListener("click", () => {
-  profileCard.classList.add("shrink");
-  detailCard.classList.add("show");
+profileImage.addEventListener("click", (e) => {
+  e.stopPropagation(); 
+  flipCardInner.classList.add("flipped");
 });
 
-// When clicking image on detail card → reverse it back
-detailCard.querySelector("img").addEventListener("click", () => {
-  profileCard.classList.remove("shrink");
-  detailCard.classList.remove("show");
+document.addEventListener("click", (e) => {
+  const isClickInsideCard = e.target.closest(".profile-card");
+  if (!isClickInsideCard && flipCardInner.classList.contains("flipped")) {
+    flipCardInner.classList.remove("flipped");
+  }
 });
-
