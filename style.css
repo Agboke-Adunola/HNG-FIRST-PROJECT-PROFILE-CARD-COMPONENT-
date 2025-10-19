@@ -419,8 +419,8 @@ button:focus-visible {
     transform: scale(0.95);
   }
   .profile-image {
-    max-height: 40%;
-    min-height:35%;
+    max-height: 35%;
+    min-height:30%;
   }
   .profile-image figure {
     display: flex;
