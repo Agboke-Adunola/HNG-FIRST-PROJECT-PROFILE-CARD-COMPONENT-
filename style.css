@@ -421,7 +421,7 @@ button:focus-visible {
   }
   .profile-image {
     max-height: 40%;
-    min-height: 35%;
+    min-height:25%;
   }
   .profile-image figure {
     display: flex;
