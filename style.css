@@ -407,7 +407,11 @@ button:focus-visible {
     flex-direction: column;
     width: 80%;
     height: 95%;
+    overflow-y: auto;
   }
+  .profile-card::-webkit-scrollbar {
+  display: none; 
+}
   .card-front {
     flex-direction: column;
   }
