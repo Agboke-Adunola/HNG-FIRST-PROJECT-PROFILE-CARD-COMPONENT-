@@ -406,9 +406,7 @@ button:focus-visible {
   .profile-card {
     flex-direction: column;
     width: 80%;
-    min-height: 80%;
-    max-height: 98%;
-    overflow-y: auto;
+    height: 95%;
   }
   .card-front {
     flex-direction: column;
@@ -421,8 +419,8 @@ button:focus-visible {
     transform: scale(0.95);
   }
   .profile-image {
-    max-height: 35%;
-    min-height:25%;
+    max-height: 40%;
+    min-height:35%;
   }
   .profile-image figure {
     display: flex;
