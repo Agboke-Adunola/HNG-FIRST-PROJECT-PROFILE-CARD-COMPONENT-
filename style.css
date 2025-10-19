@@ -411,7 +411,7 @@ button:focus-visible {
   }
   .profile-card {
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     height: 95%;
     overflow-y: auto;
   }
