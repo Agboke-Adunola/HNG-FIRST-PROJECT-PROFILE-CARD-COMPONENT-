@@ -1,66 +1,3 @@
-.about-page {
-  background: var(--bg-gradient);
-}
-
-.navbar {
-  background: var(--whitish);
-  color: var(--whitish);
-  width: 100%;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  position: relative;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10rem;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: var(--purple);
-  font-size: 1.5rem;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: var(--yellow);
-}
-
-.logo {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--purple);
-}
-
-/* Hamburger menu (hidden on desktop) */
-.menu-toggle {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* Navigation Menu */
-#nav-menu ul {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-  transition: all 0.3s ease;
-}
-
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
@@ -142,11 +79,20 @@ html {
 }
 
 .about-goals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
+  gap: 3rem;
+  /* flex-wrap: nowrap; */
+}
+
+.technical-goals,
+.personal-goals,
+.areas {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
 }
 
 .about-goals h3 {
@@ -164,12 +110,27 @@ html {
 }
 
 .about-goals li {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 0.8rem;
   list-style: none;
+  position: relative;
+  padding-left: 2rem;
 }
 
-/* Area of Confidence Section */
+.about-goals li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #00c853;
+  font-weight: bold;
+}
+
+.areas li::before {
+  content: "✖";
+  color: red;
+}
+
+/* Area of Confidence Section
 .areas-container {
   display: flex;
   flex-direction: column;
@@ -195,95 +156,23 @@ html {
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
   list-style: none;
-}
+} */
 
-/* Note to myself section*/
-.Note {
+/* note to myself section*/
+.note {
   background: var(--whitish);
   padding: 3rem 5%;
-  font-style: italic;
   border-top: 3px solid var(--blue);
 }
 
-.Note p {
+.note p {
+  font-style: italic;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.8;
 }
-
-footer {
-  text-align: center;
-  color: var(--purple);
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 0 1rem;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .about-details {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-goals {
-    flex-direction: column;
-  }
-
-  .areas{
-    font-size: 1rem;
-  }
-  .navbar ul {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .about-bio button {
-    width: 100%;
-  }
-  .menu-toggle {
-    display: block;
-    color: var(--purple);
-  }
-
-  #nav-menu {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 60%;
-    background: var(--bg-gradient);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem 0;
-    border-radius: 0 0 0 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-
-  #nav-menu.active {
-    display: flex;
-  }
-
-  #nav-menu ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  #nav-menu a {
-    font-size: 1.2rem;
-    color: var(--whitish);
-    padding: 0.75rem;
-  }
-
-  #nav-menu a:hover {
-    color: var(--yellow);
-  }
-}
-
 
 /* keyboard navigation for links */
 a:focus,
@@ -312,4 +201,29 @@ button:focus-visible {
   outline: none;
   box-shadow: 0 0 6px rgba(255, 235, 59, 0.6);
   border-radius: 50%;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .areas {
+    font-size: 1rem;
+  }
+  .header {
+    padding: 0 2rem;
+  }
+  .about-bio button {
+    width: 100%;
+  }
+
+  .about-goals {
+    grid-template-columns: 1fr;
+  }
+
+  .note p {
+    text-align: justify;
+  }
 }

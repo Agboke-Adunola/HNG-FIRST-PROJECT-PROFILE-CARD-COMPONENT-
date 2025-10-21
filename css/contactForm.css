@@ -9,17 +9,20 @@ form {
   /* background: var(--bg-gradient); */
   height: 100%;
   display: flex;
+
   justify-content: center;
   align-items: center;
 }
 
 .contact-form {
-  width: 80%;
-  height: 90%;
+  width: 65%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
+    padding:3rem;
+  gap:4rem;
   border-radius: 12px;
   background: var(--bg-gradient);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -55,8 +58,8 @@ form {
 }
 
 .contact-details p {
-  margin-bottom: 12px;
-  font-size: 1.2rem;      
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;      
   display: flex;
   align-items: center;
   line-height: 1.6;
@@ -70,8 +73,8 @@ form {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;       
-  margin-right: 10px;     
+  font-size: 1.5rem;       
+  margin-right: 1rem;     
   color: var(--whitish);         
 }
 
@@ -108,7 +111,7 @@ form {
 /* Right Side */
 .details-info {
   width: 50%;
-  padding: 3rem;
+  /* padding: 3rem; */
   height: 100%;
 }
 
@@ -125,11 +128,11 @@ form {
 }
 
 label {
-  font-size: 1rem;
-  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
   color: var(--yellow);
   display: inline-block;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 input,
@@ -156,6 +159,7 @@ button[type="submit"] {
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
   margin-left: auto;
 }
@@ -164,18 +168,7 @@ button:hover {
   background-color: var(--yellow);
 }
 
- footer {
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: var(--yellow);
-  font-size: 1.5rem;
-} 
-
-/* =========================
-   RESPONSIVE DESIGN
-   ========================= */
-
+/* Responsive design */
 /* 📱 Tablet View (max-width: 1024px) */
 @media (max-width: 1024px) {
   .contact-form {
@@ -226,7 +219,7 @@ button:hover {
   }
 }
 
-/* 📲 Mobile View (max-width: 599px) */
+/* Mobile View (max-width: 599px) */
 @media (max-width: 599px) {
   .form-container {
     height: auto;
@@ -252,12 +245,12 @@ button:hover {
   }
 
   .contact-text {
-    font-size: 1.1rem;
-    margin-block: 15px;
+    font-size: 1.5rem;
+    margin-block: 1.5rem;
   }
 
   .contact-details p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .contact-icons a {
@@ -275,7 +268,7 @@ button:hover {
   }
 
   .details-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
   }
@@ -300,14 +293,7 @@ button:hover {
     padding: 10px;
     font-size: 1rem;
   }
-
-  footer {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 1rem;
-  }
 }
-
 
 /* keyboard navigation for links */
 a:focus,

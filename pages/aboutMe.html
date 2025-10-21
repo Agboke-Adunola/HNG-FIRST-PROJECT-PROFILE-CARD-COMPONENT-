@@ -8,9 +8,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="utility.css" />
-    <link rel="stylesheet" href="aboutMe.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/utility.css" />
+    <link rel="stylesheet" href="/css/aboutMe.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
   </head>
   <body>
     <main class="about-container" data-testid="test-about-page">
@@ -19,18 +21,16 @@
           <div class="header">
             <div class="logo">AdunCodes</div>
 
-         <!-- for harmburger menu -->
+            <!-- for harmburger menu -->
             <div class="menu-toggle" id="menu-toggle">
               <i class="fas fa-bars"></i>
             </div>
 
             <nav aria-label="Main navigation" id="nav-menu">
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactForm.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/contactForm.html">Contact</a></li>
                 <li><a href="#goals">Goals</a></li>
-                <li><a href="#areas">Area of Improvement</a></li>
-                <li><a href="#notes">Notes</a></li>
               </ul>
             </nav>
           </div>
@@ -39,7 +39,7 @@
         <section class="about-details">
           <!-- left section -->
           <div class="about-image">
-            <img src="assets/profile_pics.jpg" alt="about-avatar" />
+            <img src="/assets/profile_pics.jpg" alt="about-avatar" />
           </div>
 
           <!-- Right section -->
@@ -65,47 +65,53 @@
           </div>
         </section>
 
-        <section class="about-goals-container" id="goals" data-testid="test-about-goals">
+        <section
+          class="about-goals-container"
+          id="goals"
+          data-testid="test-about-goals"
+        >
           <div class="about-goals">
-            <h3>Technical goals</h3>
-            <ul>
-              <li>Improve my front end skills</li>
-              <li>Gain more mastery of version control</li>
-              <li>Gain more confidence in testing & debugging</li>
-              <li>Create advanced responsive & clean UI</li>
-              <li>Complete project successfully</li>
-              <li>Enhance my portfolio</li>
-              <li>Engaging in real world problem solving</li>
-            </ul>
+            <div class="technical-goals">
+              <h3>Technical goals</h3>
+              <ul>
+                <li>Improve my front end skills</li>
+                <li>Gain more mastery of version control</li>
+                <li>Gain more confidence in testing & debugging</li>
+                <li>Create advanced responsive & clean UI</li>
+                <li>Complete project successfully</li>
+                <li>Enhance my portfolio</li>
+                <li>Engaging in real world problem solving</li>
+              </ul>
+            </div>
 
-            <h3>Personal Growth goals</h3>
-            <ul>
-              <li>Networking & Professional experience</li>
-              <li>
-                Adaptability(being comfortable learning new skills or frameworks
-                quickly as projects demand)
-              </li>
-              <li>Build Confidence in tech skills</li>
-              <li>Create advanced responsive & clean UI</li>
-            </ul>
+            <div class="personal-goals">
+              <h3>Personal Growth goals</h3>
+              <ul>
+                <li>Networking & Professional experience</li>
+                <li>
+                  Adaptability(being comfortable learning new skills or
+                  frameworks quickly as projects demand)
+                </li>
+                <li>Build Confidence in tech skills</li>
+                <li>Create advanced responsive & clean UI</li>
+              </ul>
+            </div>
+
+            <div class="areas" id="areas" data-testid="test-about-confidence">
+              <h3>Area of Low Self Confidence</h3>
+              <ul>
+                <li>
+                  State Management- Redux, context API or custom hooks can feel
+                  quite overwhelming.
+                </li>
+                <li>Complex component interactions can be confusing.</li>
+                <li>Refactoring for readability</li>
+              </ul>
+            </div>
           </div>
         </section>
 
-        <section class="areas-container">
-          <div class="areas" id="areas" data-testid="test-about-confidence">
-            <h3>Area of Low Self Confidence</h3>
-            <ul>
-              <li>
-                State Management- Redux, context API or custom hooks can feel
-                quite overwhelming.
-              </li>
-              <li>Complex component interactions can be confusing.</li>
-              <li>Refacctoring for readability</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="Note" id="notes" data-testid="test-about-future-note">
+        <section class="note" id="notes" data-testid="test-about-future-note">
           <p>
             Dear Future Me, <br />
             Remember how far you have come, the late nights <br />
@@ -125,6 +131,6 @@
       <footer>&copy; AdunCodes 2025</footer>
     </main>
 
-    <script src="aboutMe.js"></script>
+    <script src="/js/aboutMe.js"></script>
   </body>
 </html>

@@ -31,7 +31,7 @@
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   outline: none;
   transition: border 0.3s ease;
 }
@@ -75,7 +75,7 @@
   bottom: -18px;
   left: 0;
   visibility: hidden;
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
 .form-control.error small {
@@ -84,3 +84,4 @@
 textarea{
     resize: none
 }
+
