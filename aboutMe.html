@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="aboutMe.css" />
+  </head>
+  <body>
+    <main class="about-container" data-testid="test-about-page">
+      <div class="about-page">
+        <section class="navbar">
+          <div class="header">
+            <div class="logo">AdunCodes</div>
+
+         <!-- for harmburger menu -->
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+
+            <nav aria-label="Main navigation" id="nav-menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactForm.html">Contact</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#areas">Area of Improvement</a></li>
+                <li><a href="#notes">Notes</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+
+        <section class="about-details">
+          <!-- left section -->
+          <div class="about-image">
+            <img src="assets/profile_pics.jpg" alt="about-avatar" />
+          </div>
+
+          <!-- Right section -->
+          <div class="about-bio">
+            <h1 class="about-heading" data-testid="test-user-name">
+              Agboke Adunola (AdunCodes)
+            </h1>
+
+            <h2>So Who am I?</h2>
+            <p data-testid="test-user-bio">
+              I am a Front end developer who is passionate about turning ideas
+              into interfaces, building responsive, user-centered experiences
+              using
+              <span class="profile-info-highlight">
+                <strong>HTML</strong>, <strong>CSS</strong>,
+                <strong>JavaScript</strong>, and <strong>React</strong>
+              </span>
+            </p>
+
+            <button onclick="window.location.href='contactForm.html'">
+              Message
+            </button>
+          </div>
+        </section>
+
+        <section class="about-goals-container" id="goals" data-testid="test-about-goals">
+          <div class="about-goals">
+            <h3>Technical goals</h3>
+            <ul>
+              <li>Improve my front end skills</li>
+              <li>Gain more mastery of version control</li>
+              <li>Gain more confidence in testing & debugging</li>
+              <li>Create advanced responsive & clean UI</li>
+              <li>Complete project successfully</li>
+              <li>Enhance my portfolio</li>
+              <li>Engaging in real world problem solving</li>
+            </ul>
+
+            <h3>Personal Growth goals</h3>
+            <ul>
+              <li>Networking & Professional experience</li>
+              <li>
+                Adaptability(being comfortable learning new skills or frameworks
+                quickly as projects demand)
+              </li>
+              <li>Build Confidence in tech skills</li>
+              <li>Create advanced responsive & clean UI</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="areas-container">
+          <div class="areas" id="areas" data-testid="test-about-confidence">
+            <h3>Area of Low Self Confidence</h3>
+            <ul>
+              <li>
+                State Management- Redux, context API or custom hooks can feel
+                quite overwhelming.
+              </li>
+              <li>Complex component interactions can be confusing.</li>
+              <li>Refacctoring for readability</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="Note" id="notes" data-testid="test-about-future-note">
+          <p>
+            Dear Future Me, <br />
+            Remember how far you have come, the late nights <br />
+            learning javascript, struggling with GIT, figuring out React, and
+            <br />
+            building projects one step at a time. Every challenge and mistake
+            <br />
+            was a step forward. Keep learning, stay curious, and value growth<br />
+            over perfection. Celebrate wins, share knowledge and keep
+            building;<br />
+            not just code, but confidence and resilience. <br />
+            You've got this. <br />
+            Your Past self.
+          </p>
+        </section>
+      </div>
+      <footer>&copy; AdunCodes 2025</footer>
+    </main>
+
+    <script src="aboutMe.js"></script>
+  </body>
+</html>

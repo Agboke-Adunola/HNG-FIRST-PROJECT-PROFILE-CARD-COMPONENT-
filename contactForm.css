@@ -308,3 +308,33 @@ button:hover {
   }
 }
 
+
+/* keyboard navigation for links */
+a:focus,
+a:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 4px;
+  border-radius: 4px;
+  transition: outline 0.2s ease;
+}
+
+/* keyboard navigation for buttons */
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 4px;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(255, 235, 59, 0.5);
+  transition: outline 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* keyboard navigation for social Icons */
+.social-icons a:focus,
+.social-icons a:focus-visible {
+  color: var(--yellow);
+  transform: scale(1.15);
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 235, 59, 0.6);
+  border-radius: 50%;
+}
+
