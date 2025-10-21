@@ -1,27 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-:root {
-  --whitish: #f0f0f5;
-  --yellow: #ffeb3b;
-  --black: #1a1a1a;
-  --blue: #2575fc;
-  --purple: #6a11cb;
-  --font-family: "Poppins", sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  font-family: var(--font-family);
-  width: 100%;
-  background-color: var(--whitish);
-  height: 100%;
-}
 
 .card-container {
   display: flex;
@@ -46,7 +23,7 @@ body {
 
 .profile-info {
   flex: 1;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background: var( --bg-gradient);
   color: var(--whitish);
   padding: 2rem;
   display: flex;

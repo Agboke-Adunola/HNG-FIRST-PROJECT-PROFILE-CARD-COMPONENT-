@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT ME FORM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="contactForm.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="form-container">
+        
+      <div class="contact-form">
+        <!-- Left Section -->
+        <div class="contact-info">
+          <h2 class="contact-heading">Contact Information</h2>
+          <p class="contact-text">Get in touch</p>
+
+          <div
+            class="contact-details flex-1 flex flex-col items-center justify-center"
+          >
+            <p class="phone-no">+23546677894</p>
+            <p class="email">agbokeadunola@gmail.com</p>
+          </div>
+
+          <div
+            class="contact-icons mt-auto"
+            data-testid="test-user-contact-links"
+          >
+            <a
+              href="https://linkedin.com/in/agboke-folashade-718416125"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              aria-label="LinkedIn"
+              >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+            href="https://github.com/Agboke-Adunola"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-github"
+            aria-label="GitHub"
+            >
+            <i class="fab fa-github"></i>
+        </a>
+        <a
+        href="https://instagram.com/Agboke-folashade"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-testid="test-user-social-instagram"
+        aria-label="Instagram"
+        >
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="details-info">
+          <h2 class="details-heading">Contact US</h2>
+          <p class="details-text">
+            Got any questions, feel free to send a message
+          </p>
+          <form id="contactForm" novalidate>
+            <div class="form-control">
+              <label for="FirstName">First Name</label>
+              <input
+                type="text"
+                id="FirstName"
+                placeholder="Enter First Name"
+                name="firstname"
+                required
+                data-testid="test-contact-firstname"
+              />
+              <i class="fa-solid fa-circle-check success-icon"></i>
+              <i class="fa-solid fa-circle-exclamation error-icon"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label for="LastName">Last Name</label>
+              <input
+                type="text"
+                id="LastName"
+                placeholder="Enter Last Name"
+                name="lastname"
+                required
+                data-testid="test-contact-lastname"
+              />
+              <i class="fa-solid fa-circle-check success-icon"></i>
+              <i class="fa-solid fa-circle-exclamation error-icon"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label for="Email">Email Address</label>
+              <input
+                type="email"
+                id="Email"
+                placeholder="Enter E-mail address"
+                name="email"
+                required
+                data-testid="test-contact-email"
+              />
+              <i class="fa-solid fa-circle-check success-icon"></i>
+              <i class="fa-solid fa-circle-exclamation error-icon"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label for="Phone-Number">Phone No</label>
+              <input
+                type="text"
+                id="Phone-Number"
+                placeholder="Enter Phone Number"
+                name="Phone-Number"
+                required
+                data-testid="test-contact-phone-number"
+              />
+              <i class="fa-solid fa-circle-check success-icon"></i>
+              <i class="fa-solid fa-circle-exclamation error-icon"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                placeholder="Write your message..."
+                name="message"
+                id="message"
+                rows="5"
+                
+                data-testid="test-contact-message"
+                required
+              ></textarea>
+              <i class="fa-solid fa-circle-check success-icon"></i>
+              <i class="fa-solid fa-circle-exclamation error-icon"></i>
+              <small>Error message</small>
+            </div>
+
+            <button type="submit" data-testid="test-contact-submit">
+              Send Message
+            </button>
+          </form>
+          
+          <footer>&copy; AdunCodes 2025</footer>
+        </div>
+      </div>
+    </div>
+    <script src="contactForm.js"></script>
+  </body>
+</html>
