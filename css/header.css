@@ -1,0 +1,110 @@
+.about-page {
+  background: var(--bg-gradient);
+}
+
+.navbar {
+  background: var(--whitish);
+  color: var(--whitish);
+  width: 100%;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  position: relative;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--purple);
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--blue);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--purple);
+}
+
+/* Hamburger menu (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navigation Menu */
+#nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: var(--purple);
+  }
+
+  #nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 60%;
+    background: var(--bg-gradient);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-radius: 0 0 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
+
+  #nav-menu ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #nav-menu a {
+    font-size: 1.5rem;
+    color: var(--whitish);
+    padding: 0.75rem;
+  }
+
+  #nav-menu a:hover {
+    color: var(--yellow);
+  }
+}

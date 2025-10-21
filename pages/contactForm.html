@@ -8,15 +8,36 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="utility.css" />
-    <link rel="stylesheet" href="contactForm.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/utility.css" />
+    <link rel="stylesheet" href="/css/contactForm.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
+    <section class="navbar">
+      <div class="header">
+        <div class="logo">AdunCodes</div>
+
+        <!-- for harmburger menu -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <nav aria-label="Main navigation" id="nav-menu">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/contactForm.html">Contact</a></li>
+            <li><a href="/pages/aboutMe.html#goals">Goals</a></li>
+            <!-- <li><a href="#areas">Area of Improvement</a></li>
+                <li><a href="#notes">Notes</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </section>
     <div class="form-container">
-        
       <div class="contact-form">
         <!-- Left Section -->
         <div class="contact-info">
@@ -40,28 +61,28 @@
               rel="noopener noreferrer"
               data-testid="test-user-social-linkedin"
               aria-label="LinkedIn"
-              >
+            >
               <i class="fab fa-linkedin"></i>
             </a>
             <a
-            href="https://github.com/Agboke-Adunola"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-testid="test-user-social-github"
-            aria-label="GitHub"
+              href="https://github.com/Agboke-Adunola"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              aria-label="GitHub"
             >
-            <i class="fab fa-github"></i>
-        </a>
-        <a
-        href="https://instagram.com/Agboke-folashade"
-        target="_blank"
-        rel="noopener noreferrer"
-        data-testid="test-user-social-instagram"
-        aria-label="Instagram"
-        >
-        <i class="fab fa-instagram"></i>
-    </a>
-</div>
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://instagram.com/Agboke-folashade"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-instagram"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
 
         <!-- Right Section -->
@@ -138,7 +159,6 @@
                 name="message"
                 id="message"
                 rows="5"
-                
                 data-testid="test-contact-message"
                 required
               ></textarea>
@@ -151,11 +171,10 @@
               Send Message
             </button>
           </form>
-          
-          <footer>&copy; AdunCodes 2025</footer>
         </div>
       </div>
     </div>
-    <script src="contactForm.js"></script>
+    </css/>&copy; AdunCodes 2025</footer>
+    <script src="/js/contactForm.js"></script>
   </body>
 </html>

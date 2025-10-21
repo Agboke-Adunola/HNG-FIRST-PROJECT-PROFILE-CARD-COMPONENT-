@@ -34,7 +34,7 @@
 }
 
 .profile-info .name {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: var(--yellow);
@@ -42,21 +42,22 @@
 
 .profile-info h3 {
   font-weight: 500;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 #current-time {
   font-family: var(--font-family);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.5rem;
   color: var(--yellow);
   margin-top: 5px;
   letter-spacing: 1px;
 }
 
 .profile-info p {
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   color: var(--whitish);
 }
@@ -97,7 +98,7 @@
 
 .social-icons a {
   color: var(--whitish);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -184,29 +185,29 @@
 }
 
 .detail-header p {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .detail-header h5 {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  /* font-weight: 600; */
   color: var(--yellow);
 }
 
 .detail-card .name {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  /* font-weight: 600; */
   color: var(--yellow);
 }
 
 .detail-card h3 {
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  /* font-weight: 500; */
   margin-bottom: 1rem;
 }
 
 .detail-card .about {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 .profile-card {
   width: 750px;
@@ -287,7 +288,7 @@
 .card-back .dislike h3 {
   color: var(--yellow);
   margin-bottom: 0.8rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -306,7 +307,7 @@
 }
 
 .card-back ul li {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #f4f4f4;
   padding: 0.3rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -322,13 +323,13 @@
 
 .card-back .contact-links h3 {
   color: var(--yellow);
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
 }
 
 .card-back .contact-links p {
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   color: #f2f2f2;
   margin-bottom: 1rem;
 }
@@ -341,7 +342,7 @@
 
 .card-back .social-icons a {
   color: var(--whitish);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
