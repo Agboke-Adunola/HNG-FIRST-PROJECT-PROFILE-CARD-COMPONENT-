@@ -308,7 +308,7 @@
 
 .card-back ul li {
   font-size: 1.5rem;
-  color: #f4f4f4;
+  color: var(--whitish);
   padding: 0.3rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -330,7 +330,7 @@
 
 .card-back .contact-links p {
   font-size: 1.5rem;
-  color: #f2f2f2;
+  color: var(--whitish);
   margin-bottom: 1rem;
 }
 

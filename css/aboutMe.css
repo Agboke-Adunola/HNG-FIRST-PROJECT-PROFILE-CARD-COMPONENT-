@@ -121,13 +121,13 @@ html {
   content: "✔";
   position: absolute;
   left: 0;
-  color: #00c853;
+  color: var(--green);
   font-weight: bold;
 }
 
 .areas li::before {
   content: "✖";
-  color: red;
+  color: var(--red);
 }
 
 /* Area of Confidence Section

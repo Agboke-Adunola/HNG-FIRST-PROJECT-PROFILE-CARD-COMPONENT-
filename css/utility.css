@@ -29,7 +29,7 @@
 .form-control textarea {
   width: 100%;
   padding: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid (--whitish);
   border-radius: 6px;
   font-size: 1.5rem;
   outline: none;
@@ -38,12 +38,12 @@
 
 .form-control.success input,
 .form-control.success textarea {
-  border-color: #28a745;
+  border-color: var(--green)
 }
 
 .form-control.error input,
 .form-control.error textarea {
-  border-color: #e74c3c;
+  border-color: var(--red);
 }
 
 .form-control i {
@@ -58,7 +58,7 @@
 }
 
 .error-icon {
-  color: #e74c3c;
+  color: var(--red);
 }
 
 .form-control.success .success-icon {
@@ -70,7 +70,7 @@
 }
 
 .form-control small {
-  color: #e74c3c;
+  color: var(--red);
   position: absolute;
   bottom: -18px;
   left: 0;
